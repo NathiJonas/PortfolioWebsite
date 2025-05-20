@@ -8,49 +8,41 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>My Name</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="toggle-theme">Toggle Dark Mode</button>
+    </nav>
   </header>
 
   <section id="about">
-    <div class="container">
-      <img src="https://via.placeholder.com/150" alt="Profile" class="profile-img" />
-      <h2>About Me</h2>
-      <p>This is a brief description about me. I am a web developer with a passion for building beautiful and functional websites.</p>
-    </div>
+    <h2>About Me</h2>
+    <p>Hello! I’m a passionate developer showcasing my portfolio.</p>
   </section>
 
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project One</h3>
-        <p>Description of project one.</p>
-        <a href="#">View on GitHub</a>
-      </div>
-      <div class="project">
-        <h3>Project Two</h3>
-        <p>Description of project two.</p>
-        <a href="#">View on GitHub</a>
-      </div>
+  <section>
+    <h2 onclick="toggleSection('projects')">Projects ▼</h2>
+    <div id="projects" class="collapsible">
+      <ul>
+        <li>Project A - Description here</li>
+        <li>Project B - Description here</li>
+      </ul>
     </div>
   </section>
 
   <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    </div>
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="email" id="email" placeholder="Your Email" required />
+      <button type="submit">Send</button>
+    </form>
+    <p id="form-message"></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 My Name. All rights reserved.</p>
+    <p>&copy; 2025 My Portfolio</p>
   </footer>
 
   <script src="script.js"></script>
