@@ -39,8 +39,8 @@ a {
 }
 
 .profile-img {
-  width: 200px;
-  border-radius: 0%;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .gallery-grid {
